@@ -83,23 +83,23 @@ WSGI_APPLICATION = 'jaw_project.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'favkhrmx',
-#         'USER': 'favkhrmx',
-#         'PASSWORD': 'jg7kzpxs09WxBdWsBBb1RQWmUywRWvhQ',
-#         'HOST': 'rogue.db.elephantsql.com',
-#         'PORT': '5432'
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'favkhrmx',
+        'USER': 'favkhrmx',
+        'PASSWORD': 'jg7kzpxs09WxBdWsBBb1RQWmUywRWvhQ',
+        'HOST': 'rogue.db.elephantsql.com',
+        'PORT': '5432'
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 
@@ -140,6 +140,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 
