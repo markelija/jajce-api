@@ -10,6 +10,7 @@ django = "==3.0.3"
 psycopg2 = "*"
 gunicorn = "==19.9.0"
 heroku = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
