@@ -12,4 +12,3 @@ class PlaniranoOdrzavanje(models.Model):
   class Meta(object):
     verbose_name_plural = 'Planirana održavanje'
 
-
